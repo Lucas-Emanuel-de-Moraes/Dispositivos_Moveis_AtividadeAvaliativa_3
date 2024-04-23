@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/cadastro_do_participante"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="@string/digite_seu_nome"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="LabelFor,UnknownId"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="@string/digite_seu_email"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome"
+            tools:ignore="LabelFor,UnknownId"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="@string/digite_seu_telefone"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            tools:ignore="LabelFor,UnknownId"
+            android:autofillHints="" />
+
+        <Spinner
+            android:id="@+id/tipo_participante"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="@string/tipo_de_participante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone"/>
+
+        <Spinner
+            android:id="@+id/tamanho_camisa"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="@string/tamanho_de_camisa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_participante"/>
+
+
+        <TextView
+            android:id="@+id/AreaInteresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/areas_de_interesse"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tamanho_camisa" />
+
+        <CheckBox
+            android:id="@+id/curso1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prototipa_o"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="59dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AreaInteresse"
+            android:layout_marginTop="8dp"
+            />
+
+        <CheckBox
+            android:id="@+id/curso2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backend"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="59dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/curso1"
+            android:layout_marginTop="8dp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/curso3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/frontend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/curso2" />
+
+
+        <CheckBox
+            android:id="@+id/curso4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/inteligencia_artificial"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/curso3" />
+
+
+        <TextView
+            android:id="@+id/MotivoInscrição"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/motivo_da_inscri_o"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/curso4" />
+
+
+
+        <CheckBox
+            android:id="@+id/motivo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minicursos"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="59dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/MotivoInscrição"
+            android:layout_marginTop="8dp"
+            />
+
+        <CheckBox
+            android:id="@+id/motivo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/palestras"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="59dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/motivo1"
+            android:layout_marginTop="8dp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/motivo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/possiveis_contatos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/motivo2" />
+
+
+        <CheckBox
+            android:id="@+id/motivo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/competi_es"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/motivo3" />
+
+        <Switch
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            app:layout_constraintEnd_toStartOf="@id/notific"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motivo4"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/notific"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/receber_notifica_o"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/notification"
+            app:layout_constraintTop_toBottomOf="@+id/motivo4" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
