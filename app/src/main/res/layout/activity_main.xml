@@ -42,7 +42,7 @@
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:hint="@string/digite_seu_email"
+            android:hint="digite_seu_email"
             android:ems="10"
             android:gravity="center"
             android:inputType="textEmailAddress"
@@ -108,7 +108,7 @@
             android:text="@string/prototipa_o"
             tools:layout_editor_absoluteX="-3dp"
             tools:layout_editor_absoluteY="59dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/curso2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/AreaInteresse"
             android:layout_marginTop="8dp"
@@ -121,9 +121,9 @@
             android:text="@string/backend"
             tools:layout_editor_absoluteX="-3dp"
             tools:layout_editor_absoluteY="59dp"
+            app:layout_constraintStart_toEndOf="@id/curso1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/curso1"
+            app:layout_constraintTop_toBottomOf="@id/AreaInteresse"
             android:layout_marginTop="8dp"
             />
 
@@ -137,7 +137,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/curso2" />
+            app:layout_constraintEnd_toStartOf="@id/curso4"
+            app:layout_constraintTop_toBottomOf="@id/curso1"
+            />
 
 
         <CheckBox
@@ -148,8 +150,8 @@
             android:text="@string/inteligencia_artificial"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/curso3" />
+            app:layout_constraintStart_toEndOf="@id/curso3"
+            app:layout_constraintTop_toBottomOf="@id/curso2" />
 
 
         <TextView
@@ -173,7 +175,7 @@
             android:text="@string/minicursos"
             tools:layout_editor_absoluteX="-3dp"
             tools:layout_editor_absoluteY="59dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/motivo2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/MotivoInscrição"
             android:layout_marginTop="8dp"
@@ -187,8 +189,8 @@
             tools:layout_editor_absoluteX="-3dp"
             tools:layout_editor_absoluteY="59dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/motivo1"
+            app:layout_constraintStart_toEndOf="@id/motivo1"
+            app:layout_constraintTop_toBottomOf="@id/MotivoInscrição"
             android:layout_marginTop="8dp"
             />
 
@@ -199,10 +201,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/possiveis_contatos"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/motivo4"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/motivo2" />
+            app:layout_constraintTop_toBottomOf="@id/motivo1" />
 
 
         <CheckBox
@@ -211,10 +213,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/competi_es"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/motivo3"
             app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/motivo3" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/motivo2" />
 
         <Switch
             android:id="@+id/notification"
@@ -229,7 +231,6 @@
             android:id="@+id/notific"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginTop="12dp"
             android:text="@string/receber_notifica_o"
             android:textSize="15sp"
             android:textStyle="bold"
