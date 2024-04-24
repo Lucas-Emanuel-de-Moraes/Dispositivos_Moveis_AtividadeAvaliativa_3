@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Aplication For Avaliable</string>
     <string name="cadastro_do_participante">Cadastro do Participante</string>
-    <string name="digite_seu_nome">Digite seu nome</string>
-    <string name="digite_seu_email">Digite seu Email</string>
-    <string name="digite_seu_telefone">Digite seu Telefone</string>
+    <string name="digite_seu_nome">Nome completo</string>
+    <string name="digite_seu_email">Email</string>
+    <string name="digite_seu_telefone">Telefone</string>
     <string name="prototipa_o">Prototipagem</string>
     <string name="introdu_o_a_banco_de_dados">Introdução a Banco de Dados</string>
     <string name="introdu_o_a_javascript">Introdução a JavaScript</string>
@@ -13,12 +13,13 @@
     <string name="backend">BackEnd</string>
     <string name="frontend">FrontEnd</string>
     <string name="inteligencia_artificial">Inteligencia Artificial</string>
-    <string name="areas_de_interesse">Areas de Interesse</string>
-    <string name="motivo_da_inscri_o">Motivo da Inscrição</string>
+    <string name="areas_de_interesse">Areas de Interesse:</string>
+    <string name="motivo_da_inscri_o">Motivo da Inscrição:</string>
     <string name="minicursos">MiniCursos</string>
     <string name="palestras">Palestras</string>
-    <string name="possiveis_contatos">Possiveis Contatos</string>
+    <string name="possiveis_contatos">Possíveis Contatos</string>
     <string name="competi_es">Competições</string>
-    <string name="receber_notifica_o">receber notificação</string>
+    <string name="receber_notifica_o">Receber notificações</string>
+    <string name="dados">Dados</string>
 
 </resources>
